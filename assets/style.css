@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #040404;
+  background: url('/assets/images/simple_dashed.png');
+}
+.body {
+  color: #fdfdfd;
+  font-family: 'hk_groteskregular', Helvetica Neue, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-kerning: normal;
+  line-height: 1.2;
+  word-wrap: break-word;
+  font-weight: 400;
+  font-size: 16px;
+  position: relative;
+  overflow-x: hidden;
+}
+a {
+  color: #fdfdfd;
+  text-decoration: none;
+  position: relative;
+  padding: 4px 5px;
+  color: #d7a2bb;
+  cursor: pointer;
+}
+a:hover {
+  color: #fdfdfd;
+  background: #1f1f1f;
+}
+.container {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  margin: 0 auto;
+}
+h1 {
+  font-family: 'hk_groteskmedium', Helvetica Neue, sans-serif;
+  font-size: 30px;
+  position: relative;
+  margin-top: 40px;
+}
+p {
+  line-height: 1.7;
+  font-size: 18px;
+}
+.intro {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+section {
+  margin-bottom: 20px;
+  line-height: 1.8;
+  margin-left: 20px;
+  position: relative;
+}
+section .title {
+  margin-bottom: 15px;
+  font-family: 'hk_grotesksemibold', Helvetica Neue, sans-serif;
+}
+section ul {
+  list-style: none;
+  position: relative;
+}
+section ul li {
+  margin-bottom: 12px;
+}
+section ul li:before {
+  content: '•';
+  position: absolute;
+  margin-left: -20px;
+}
+section ul li:last-child {
+  margin-bottom: 0;
+}
+section .showGithub,
+section .showDribbble,
+section .showCodepen,
+section .showTwitter,
+section .showEmail {
+  position: absolute;
+  left: 220px;
+  top: 0;
+  background: #1f1f1f;
+  padding: 8px 20px 10px 40px;
+  display: none;
+}
+section .showGithub:before,
+section .showDribbble:before,
+section .showCodepen:before,
+section .showTwitter:before,
+section .showEmail:before {
+  content: '●';
+  position: absolute;
+  left: 15px;
+  color: #d7a2bb;
+}
+@media screen and (max-width: 530px) {
+  section .showGithub,
+  section .showDribbble,
+  section .showCodepen,
+  section .showTwitter,
+  section .showEmail {
+    display: none;
+  }
+}
+.projects-container {
+  background: #040404;
+  padding: 20px 0;
+}
+.projects-container .projects {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 20px;
+}
+.projects-container .projects li {
+  margin-bottom: 15px;
+}
+.projects-container .projects li:before {
+  color: #cd698e;
+}
+.projects-container .projects a {
+  background: #cd698e;
+  color: #fdfdfd;
+  padding: 0 5px 4px 5px;
+}
+.projects-container .projects a:hover {
+  background: #d7a2bb;
+  color: #fdfdfd;
+}
+.posts {
+  margin-top: 0;
+}
+.posts li {
+  margin-bottom: 10px;
+}
+.posts span.date {
+  font-size: 16px;
+  margin-left: 10px;
+}
+nav.links {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  font-size: 20px;
+  padding: 20px;
+  z-index: 99999;
+}
+nav.links a {
+  color: #fdfdfd;
+}
+nav.links:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -90px;
+  height: 2px;
+  width: 100%;
+  background: #fdfdfd;
+}
+nav.links:after animation-name navLine {
+  animation-duration: 2.5s;
+}
+nav.links a:hover {
+  background: transparent;
+  color: #fdfdfd;
+}
