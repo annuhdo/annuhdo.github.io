@@ -1,6 +1,6 @@
 <section class="posts"><span class="title">Posts</span>
 	<ul>
-		{% for e in site.github.external_feed %}
+		{% for e in site.collections.external_feed %}
 		    <li><a href='{{ e.feed_link }}'>{{ e.title }}</a> <span class="date">{{ e.date }}</span></li>
 		{% endfor %}
 	</ul>
