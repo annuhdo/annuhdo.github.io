@@ -31,7 +31,8 @@ plugins:
   - jekyll-feed
 
 collections:
-  - external_feed
+  - external_feed:
+    output: true
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
