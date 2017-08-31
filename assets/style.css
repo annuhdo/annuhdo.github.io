@@ -79,6 +79,7 @@ section ul li:last-child {
 section .showGithub,
 section .showDribbble,
 section .showCodepen,
+section .showMedium,
 section .showTwitter,
 section .showEmail {
   position: absolute;
@@ -91,6 +92,7 @@ section .showEmail {
 section .showGithub:before,
 section .showDribbble:before,
 section .showCodepen:before,
+section .showMedium:before,
 section .showTwitter:before,
 section .showEmail:before {
   content: '●';
@@ -102,6 +104,7 @@ section .showEmail:before {
   section .showGithub,
   section .showDribbble,
   section .showCodepen,
+  section .showMedium,
   section .showTwitter,
   section .showEmail {
     display: none;
