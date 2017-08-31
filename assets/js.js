@@ -3,6 +3,7 @@ const connectSection = document.querySelector('section.connect');
 const githubTip = document.querySelector('section.connect .showGithub');
 const dribbbleTip = document.querySelector('section.connect .showDribbble');
 const codepenTip = document.querySelector('section.connect .showCodepen');
+const mediumTip = document.querySelector('section.connect .showMedium');
 const twitterTip = document.querySelector('section.connect .showTwitter');
 const emailTip = document.querySelector('section.connect .showEmail');
 
@@ -16,6 +17,9 @@ const showTip = (e) => {
 	}
 	else if (link.contains("codepen")) {
 		codepenTip.style.display = "block";
+	}
+	else if (link.contains("medium")) {
+		mediumTip.style.display = "block";
 	}
 	else if (link.contains("twitter")) {
 		twitterTip.style.display = "block";
@@ -35,6 +39,9 @@ const hideTip = (e) => {
 	}
 	else if (link.contains("codepen")) {
 		codepenTip.style.display = "none";
+	}
+	else if (link.contains("medium")) {
+		mediumTip.style.display = "none";
 	}
 	else if (link.contains("twitter")) {
 		twitterTip.style.display = "none";
