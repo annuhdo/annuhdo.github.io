@@ -107,7 +107,7 @@ section .showEmail:before {
   section .showMedium,
   section .showTwitter,
   section .showEmail {
-    display: none;
+    display: none !important;
   }
 }
 .projects-container {
