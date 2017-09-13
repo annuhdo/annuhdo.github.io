@@ -1,54 +1,19 @@
 const connectSection = document.querySelector('section.connect');
-
-const githubTip = document.querySelector('section.connect .showGithub');
-const dribbbleTip = document.querySelector('section.connect .showDribbble');
-const codepenTip = document.querySelector('section.connect .showCodepen');
-const mediumTip = document.querySelector('section.connect .showMedium');
-const twitterTip = document.querySelector('section.connect .showTwitter');
-const emailTip = document.querySelector('section.connect .showEmail');
+const urlTip = document.querySelector('section.connect .showURL');
 
 const showTip = (e) => {
-	const link = e.target.classList;
-	if (link.contains("github")) {
-		githubTip.style.display = "block";
+	const link = e.target;
+	
+	if (link.tagName == 'A') {
+		// user hovered over a link
+		urlTip.innerText = link.href;
+		urlTip.style.display = "block";
 	}
-	else if (link.contains("dribbble")) {
-		dribbbleTip.style.display = "block";
-	}
-	else if (link.contains("codepen")) {
-		codepenTip.style.display = "block";
-	}
-	else if (link.contains("medium")) {
-		mediumTip.style.display = "block";
-	}
-	else if (link.contains("twitter")) {
-		twitterTip.style.display = "block";
-	}
-	else if (link.contains("email")) {
-		emailTip.style.display = "block";
-	}
+	
 }
 
 const hideTip = (e) => {
-	const link = e.target.classList;
-	if (link.contains("github")) {
-		githubTip.style.display = "none";
-	}
-	else if (link.contains("dribbble")) {
-		dribbbleTip.style.display = "none";
-	}
-	else if (link.contains("codepen")) {
-		codepenTip.style.display = "none";
-	}
-	else if (link.contains("medium")) {
-		mediumTip.style.display = "none";
-	}
-	else if (link.contains("twitter")) {
-		twitterTip.style.display = "none";
-	}
-	else if (link.contains("email")) {
-		emailTip.style.display = "none";
-	}
+		urlTip.style.display = "none";
 }
 
 connectSection.onmouseover = showTip;

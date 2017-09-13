@@ -76,12 +76,7 @@ section ul li:before {
 section ul li:last-child {
   margin-bottom: 0;
 }
-section .showGithub,
-section .showDribbble,
-section .showCodepen,
-section .showMedium,
-section .showTwitter,
-section .showEmail {
+section .showURL {
   position: absolute;
   left: 220px;
   top: 0;
@@ -89,12 +84,7 @@ section .showEmail {
   padding: 8px 20px 10px 40px;
   display: none;
 }
-section .showGithub:before,
-section .showDribbble:before,
-section .showCodepen:before,
-section .showMedium:before,
-section .showTwitter:before,
-section .showEmail:before {
+section .showURL:before {
   content: '●';
   position: absolute;
   left: 15px;
